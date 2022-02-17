@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <com.cxd.chatview.moudle.ChatView
+        android:id="@+id/charview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+
+        app:arrow_direction="right"
+        app:arrow_height="12dp"
+        app:arrow_up_distance="10dp"
+        app:arrow_width="5dp"
+        app:conner_radius="6dp"
+        app:fill_color="@color/blue"
+        app:is_arrow_center="true"
+        app:press_fill_color="#50111111"
+        app:press_stroke_color="#50111111"
+        app:stroke_color="#FFFFFF"
+        app:stroke_width="1px">
+
+        <TextView
+            android:id="@+id/content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:text="这是箭头向右的聊天气泡"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </com.cxd.chatview.moudle.ChatView>
+
+
+    <TextView
+        android:id="@+id/user1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:text="user"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
